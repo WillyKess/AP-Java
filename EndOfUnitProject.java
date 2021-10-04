@@ -11,7 +11,7 @@ public class EndOfUnitProject {
         return isLucky7;
     }
     public static boolean mult35() {
-        System.out.println("\nPlease enter two positive integers:       (mult35)");
+        System.out.println("\nPlease enter one positive integer:       (mult35)");
         int int1 = readin.nextInt();
         boolean isMult35 = (int1 > 0 && (int1 % 3 == 0 || int1 % 5 == 0));
         return isMult35;
