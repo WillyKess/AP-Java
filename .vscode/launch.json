@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EndOfUnitProject",
+            "request": "launch",
+            "mainClass": "EndOfUnitProject",
+            "projectName": "AP Java_9c6ff941"
+        },
+        {
+            "type": "java",
             "name": "Launch temp",
             "request": "launch",
             "mainClass": "temp",
