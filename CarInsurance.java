@@ -2,26 +2,24 @@ import java.util.Random;
 
 public class CarInsurance {
     static Random rand = new Random();
+
     public static void main(String[] args) {
         // /*
         int age = rand.nextInt(10) + 14;
-        double gpa = rand.nextDouble()*4;
+        double gpa = rand.nextDouble() * 4;
         if (gpa < 2.5) {
             gpa++; // Increase the average GPA to make it slightly more realistic
         }
         if (gpa > 3.0) {
             if (age > 16) {
                 System.out.printf("You are %d years old, and your GPA is %.2f, so you will get a 10%% discount on your insurance.%n", age, gpa);
-            }
-            else {
+            } else {
                 System.out.printf("You are %d years old, and your GPA is %.2f, so you will get a 10%% discount on your insurance when you start driving.%n", age, gpa);
             }
-        }
-        else {
+        } else {
             if (age > 16) {
                 System.out.printf("You are %d years old, and your GPA is %.2f, so you will get a 20%% surcharge on your insurance.%n", age, gpa);
-            }
-            else {
+            } else {
                 System.out.printf("You are %d years old, and your GPA is %.2f, so you will get a 20%% surcharge on your insurance when you start driving. Remember to work hard!%n", age, gpa);
             }
         }

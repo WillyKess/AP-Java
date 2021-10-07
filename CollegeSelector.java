@@ -1,6 +1,8 @@
 import java.util.Scanner;
+
 public class CollegeSelector {
     static Scanner readin = new Scanner(System.in);
+
     public static void main(String[] args) {
         while (true) {
             int tierNo = -1031;
@@ -9,8 +11,8 @@ public class CollegeSelector {
 
             // This section keeps asking for the numbers until they are properly given, and allows accidental non-numerical characters too.
             // I use compound boolean expressions here, but I don't use them for the core funcionality so I have completed the assignment without using them.
-            while (!(tierNo==1||tierNo==2)) {
-                if (!(tierNo==1||tierNo==2||tierNo==-1031)) {
+            while (!(tierNo == 1 || tierNo == 2)) {
+                if (!(tierNo == 1 || tierNo == 2 || tierNo == -1031)) {
                     System.out.println("Please enter only 1 or 2!");
                 } else {
                     System.out.println("\nWould you like a tier 1 or 2 school?");
@@ -22,8 +24,8 @@ public class CollegeSelector {
                     readin.next();
                 }
             }
-            while (!(largeOrSmall==1||largeOrSmall==2)) {
-                if (!(largeOrSmall==1||largeOrSmall==2||largeOrSmall==-1031)) {
+            while (!(largeOrSmall == 1 || largeOrSmall == 2)) {
+                if (!(largeOrSmall == 1 || largeOrSmall == 2 || largeOrSmall == -1031)) {
                     System.out.println("Please enter only 1 or 2!");
                 } else {
                     System.out.println("\nWould you like a large (1) or small (2) school?");
@@ -35,8 +37,8 @@ public class CollegeSelector {
                     readin.next();
                 }
             }
-            while (!(eastOrWest==1||eastOrWest==2)) {
-                if (!(eastOrWest==1||eastOrWest==2||eastOrWest==-1031)) {
+            while (!(eastOrWest == 1 || eastOrWest == 2)) {
+                if (!(eastOrWest == 1 || eastOrWest == 2 || eastOrWest == -1031)) {
                     System.out.println("Please enter only 1 or 2!");
                 } else {
                     System.out.println("\nWould you like a school in the east (1) or west (2)?");

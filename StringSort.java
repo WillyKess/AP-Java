@@ -1,6 +1,8 @@
 import java.util.Scanner;
+
 public class StringSort {
     static Scanner readin = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println("Please enter two strings to sort:");
         String unsorted1 = readin.nextLine();

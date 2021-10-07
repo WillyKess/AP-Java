@@ -16,38 +16,41 @@ public class Sep9 {
         intDigitSum();
         readin.close();
     }
+
     public static void twoIntProcessor() {
         System.out.println("Please input two integers, hitting enter after each number:");
         int i1 = readin.nextInt();
         int i2 = readin.nextInt();
         String i1State = "";
         String i2State = "";
-        if ((i1 % 2) == 1){
+        if ((i1 % 2) == 1) {
             i1State = "odd";
-        } else if ((i1 % 2) == 0){
+        } else if ((i1 % 2) == 0) {
             i1State = "even";
         } else {
             System.out.println(errormsg);
         }
-        if ((i2 % 2) == 1){
+        if ((i2 % 2) == 1) {
             i2State = "odd";
-        } else if ((i2 % 2) == 0){
+        } else if ((i2 % 2) == 0) {
             i2State = "even";
         } else {
             System.out.println(errormsg);
         }
-        float iAverage = ((float)i1 + i2) / 2;
+        float iAverage = ((float) i1 + i2) / 2;
         int iQuotient = Math.round(i1 % i2);
         System.out.printf("You entered the numbers %d and %d.%n%d is %s and %d is %s.%nThe average of the two numbers is %s, and their quotient is %d.%n", i1, i2, i1, i1State, i2, i2State, cutZeros.format(iAverage), iQuotient);
     }
+
     public static void twoDoubleProcessor() {
         System.out.println("\nPlease input two doubles, hitting enter after each number:");
         double d1 = readin.nextDouble();
         double d2 = readin.nextDouble();
         double dAvg = (d1 + d2) / 2;
-        double dSpecialRound = Math.floor(dAvg+0.7);
+        double dSpecialRound = Math.floor(dAvg + 0.7);
         System.out.printf("You entered the numbers %s and %s.%nTheir average is %s, which is %s special rounded.%n", cutZeros.format(d1), cutZeros.format(d2), cutZeros.format(dAvg), cutZeros.format(dSpecialRound));
     }
+
     public static void intDigitSum() {
         Random rand = new Random();
         int i3Dig = rand.nextInt(900) + 100;
