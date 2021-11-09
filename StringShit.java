@@ -38,14 +38,14 @@ public class StringShit {
 
     }
 
-    public static String replaceText(String input, String replacee, String replacement) {
-        String operatee = input;
+    public static String replaceText(String operatee, String replacee, String replacement) {
+        // String operatee = input;
         while (operatee.contains(replacee)) {
             int pos = operatee.indexOf(replacee);
             operatee = operatee.substring(0, pos) + replacement + operatee.substring((pos + replacee.length()));
         }
-        String output = operatee;
-        return output; // I added operatee and output just to make this a little easier to seperate mentally, but they could be removed.
+        // String output = operatee;
+        return operatee; // I added operatee and output just to make this a little easier to seperate mentally, but they could be removed.
     }
 
 }
