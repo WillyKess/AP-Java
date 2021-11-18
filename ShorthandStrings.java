@@ -28,7 +28,11 @@ public class ShorthandStrings {
     }
     public static String toShorthand(String targetStr) {
         String targets[] = {"and", "to", "you", "for", "a", "e", "i", "o", "u", "�"};
+<<<<<<< HEAD
         String replacements[] = {"&", "2", "�", "4", "", "", "", "", "", "U"}; // Weird stuff with � and U is done so that only "you" gets replaced and converted "you"s don't get deleted. It could be any character but this one probably won't be user input so it's safer.
+=======
+        String replacements[] = {"&", "2", "�", "4", "", "", "", "", "", "U"}; // Weird stuff with � and U is done so that only you gets replaced, and converted yous don't get deleted. It could be any character but this one is rare so good.
+>>>>>>> d2e71efa5c922964e2b3a1b61e5a128b44d51aab
         for (int i = 0; i < targets.length; i++) {
             String toBeReplaced = targets[i];
             String replacement = replacements[i];
