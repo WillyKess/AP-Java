@@ -82,6 +82,7 @@ public class PigLatin {
             
         }
     }
+    
     public static String pigLatin(String input) {
         int indexOfY = -1;
         String pigLatined = input.toLowerCase();
@@ -111,6 +112,7 @@ public class PigLatin {
         }
         return pigLatined;
     }
+
     public static String reversePigLatin(String input) {
         String pigLatined = pigLatin(input);
         if (pigLatined.equals("**** INVALID ****")) {
